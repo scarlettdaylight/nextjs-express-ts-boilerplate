@@ -1,0 +1,27 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "import",
+      {
+        "libraryName": "lodash",
+        "libraryDirectory": "",
+        "camel2DashComponentName": false
+      },
+      "lodash-imports"
+    ],
+    "inline-react-svg",
+    [
+      "styled-components",
+      {
+        "ssr": true
+      }
+    ],
+    [
+      "react-intl",
+      {
+        "messagesDir": "./lang/.messages/"
+      }
+    ],
+  ]
+}

@@ -1,0 +1,11 @@
+.circleci
+.git
+.next
+deployment
+docs
+node_modules
+
+.env*
+Dockerfile
+npm-debug.log
+yarn-error.log

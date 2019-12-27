@@ -1,0 +1,90 @@
+{
+  "extends": ["airbnb", "airbnb/hooks", "plugin:prettier/recommended", "prettier/react"],
+  "overrides": [
+    {
+      "files": ["*.ts", "*.tsx"],
+      "extends": [
+        "plugin:@typescript-eslint/eslint-recommended",
+        "plugin:import/typescript",
+        "xo-typescript",
+        "prettier/@typescript-eslint"
+      ],
+      "parserOptions": {
+        "project": "./tsconfig.json"
+      },
+      "settings": {
+        "import/external-module-folders": ["node_modules", "node_modules/@types"],
+        "import/resolver": {
+          "typescript": {
+            "directory": "./tsconfig.json"
+          }
+        }
+      },
+      "rules": {
+        "react/prop-types": "off",
+        "import/extensions": [
+          "error",
+          "ignorePackages",
+          {
+            "js": "never",
+            "jsx": "never",
+            "mjs": "never",
+            "ts": "never",
+            "tsx": "never"
+          }
+        ],
+        "@typescript-eslint/explicit-function-return-type": [
+          "warn",
+          {
+            "allowExpressions": true,
+            "allowTypedFunctionExpressions": true
+          }
+        ],
+        "@typescript-eslint/no-untyped-public-signature": [
+          "error",
+          {
+            "ignoredMethods": [
+              "componentDidCatch",
+              "componentDidMount",
+              "componentDidUpdate",
+              "componentWillUnmount",
+              "getDerivedStateFromError",
+              "getDerivedStateFromProps",
+              "getSnapshotBeforeUpdate",
+              "shouldComponentUpdate",
+              "render",
+              "getInitialProps"
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "rules": {
+    "arrow-body-style": "off",
+    "consistent-return": "warn",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true
+      }
+    ],
+    "no-useless-concat": "error",
+    "no-var": "error",
+    "prefer-const": [
+      "warn",
+      {
+        "destructuring": "all",
+        "ignoreReadBeforeAssign": true
+      }
+    ],
+    "prefer-rest-params": "error",
+    "prefer-spread": "error",
+    "prefer-template": "error",
+    "prettier/prettier": "error",
+    "react/jsx-curly-brace-presence": ["warn", "never"],
+    "react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+    "react/jsx-props-no-spreading": "off",
+    "react/no-direct-mutation-state": "error"
+  }
+}
