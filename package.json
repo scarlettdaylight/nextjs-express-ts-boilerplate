@@ -27,7 +27,7 @@
     "express": "^4.17.1",
     "helmet": "^3.21.1",
     "intl-messageformat": "^7.7.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.21",
     "mobx": "^4.15.1",
     "mobx-react-lite": "^1.4.1",
     "next": "^9.1.6",
