@@ -46,7 +46,7 @@
     "styled-components": "^4.4.0",
     "styled-system": "^5.1.2",
     "type-fest": "^0.8.1",
-    "xmldom": "^0.2.1"
+    "xmldom": "^0.6.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.1",
